@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @gbareas
-- 👀 I’m interested in Fluid Mechanics and looking forward to build a career using CFD tools.
-- 🌱 I’m currently learning all the basics steps to programming in order to make my engineering portfolio more competent. Started with MATLAB and now consolidating python.
-- 💞️ I’m looking to collaborate on ...
+- 👀 I am currently working in my PhD thesis, focusing in reduced-order models + data assimilation to build predictive Digital Twins.
+- 🌱 Passionate to understand all the intrinsics of low-order models, curious to understand complex data structures using data science, in a path to sharpening my skills in programming language.
+- In this repository, you'll find the post-processing scripts I am using in my thesis to understand the flow physics of high-pressure transcritical microconfined systems.
 - 📫 If you want to contact me use this email: guillembarea.s@gmail.com
 
 <!---
