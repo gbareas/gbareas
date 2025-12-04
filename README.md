@@ -39,12 +39,20 @@ I am a PhD Researcher transitioning into Industry. I specialize in analyzing **h
 - **Result:** Successfully forecasted non-linear dynamics with low MSE, demonstrating the bridge between Fluid Dynamics and Sequence Modeling.
 - **Tech:** Python, Keras/TensorFlow, NumPy.
 
-#### 2. [High-Fidelity Spectral Analysis Pipeline](LINK_TO_REPO)
-*The engine behind my PhD thesis.*
-- **Objective:** Extract coherent structures from massive DNS datasets (>1 TB).
-- **Method:** Implemented parallelized **POD (PCA)** and **SPOD** algorithms to reduce dimensionality and identify energy-containing vortices.
-- **Scale:** Optimized for HPC clusters (Slurm/MPI) handling HDF5 formatted data.
-- **Tech:** Python, SciPy, Matplotlib, Paraview.
+#### 2. [High-Fidelity Spectral Analysis Suite](LINK_TO_MAIN_PHD_REPO_IF_EXISTS_OR_REMOVE)
+*The core computational engine behind my PhD thesis, designed to process TB-scale DNS datasets.*
+
+This pipeline is divided into two specialized modules for spatial and spectral feature extraction:
+
+* **[Module A: Proper Orthogonal Decomposition (POD)](LINK_TO_POD_REPO)**
+    * *The Data Science:* **Unsupervised Learning / PCA (Principal Component Analysis)**.
+    * **Function:** Performs Singular Value Decomposition (SVD) on massive snapshot matrices to extract dominant spatial features.
+    * **Method:** Implemented parallelized **POD (PCA)** algorithms to reduce dimensionality and identify energy-containing vortices.
+
+* **[Module B: Spectral POD (SPOD)](LINK_TO_SPOD_REPO)**
+    * *The Data Science:* **Advanced Signal Processing / FFT (Fourier Transforms)**.
+    * **Function:** Combines spectral estimation (Welch’s method) with dimensionality reduction to isolate coherent structures in the frequency domain.
+    * **Method:** Implemented parallelized **SPOD** algorithms to reduce dimensionality and identify energy-containing vortices.
 
 ---
 
