@@ -44,12 +44,12 @@ I am a PhD Researcher transitioning into Industry. I specialize in analyzing **h
 
 This pipeline is divided into two specialized modules for spatial and spectral feature extraction:
 
-* **[Module A: Proper Orthogonal Decomposition (POD)](LINK_TO_POD_REPO)**
+* **[Module A: Proper Orthogonal Decomposition (POD)]([LINK_TO_POD_REPO](https://github.com/gbareas/RHEA_to_POD))**
     * *The Data Science:* **Unsupervised Learning / PCA (Principal Component Analysis)**.
     * **Function:** Performs Singular Value Decomposition (SVD) on massive snapshot matrices to extract dominant spatial features.
     * **Method:** Implemented parallelized **POD (PCA)** algorithms to reduce dimensionality and identify energy-containing vortices.
 
-* **[Module B: Spectral POD (SPOD)](LINK_TO_SPOD_REPO)**
+* **[Module B: Spectral POD (SPOD)]([LINK_TO_SPOD_REPO](https://github.com/gbareas/RHEA_to_SPOD))**
     * *The Data Science:* **Advanced Signal Processing / FFT (Fourier Transforms)**.
     * **Function:** Combines spectral estimation (Welch’s method) with dimensionality reduction to isolate coherent structures in the frequency domain.
     * **Method:** Implemented parallelized **SPOD** algorithms to reduce dimensionality and identify energy-containing vortices.
