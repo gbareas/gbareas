@@ -1,7 +1,7 @@
 # Hi there, I'm Guillem Barea 👋
-### Computational Physicist | Data Scientist | HPC Specialist
+### R&D Data Scientist | Physics-Informed AI | HPC
 
-I am a PhD Researcher transitioning into Industry. I specialize in analyzing **high-dimensional, chaotic time-series data** (Fluid Dynamics) and translating complex physical systems into actionable predictive models.
+I am a PhD Researcher transitioning into industry. I specialize in analyzing **high-dimensional, chaotic time-series data** (Fluid Dynamics) and translating complex physical systems into actionable predictive models.
 
 - 🔭 **Currently working on:** Forecasting chaotic turbulence using **LSTM Neural Networks**.
 - 🎓 **PhD Focus:** Wall-bounded Supercritical Fluid Turbulence & Modal Analysis (POD/SPOD) at UPC.
