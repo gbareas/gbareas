@@ -1,6 +1,6 @@
 # Hi, I'm Guillem Barea 👋
 
-### Computational Scientist | Scientific Machine Learning | Statistical Modelling
+### Computational Scientist | Scientific Machine Learning
 
 I hold a PhD in data-driven fluid mechanics from [UPC BarcelonaTech](https://www.upc.edu/en) and currently lead an ERC-funded Proof of Concept with a multidisciplinary team of seven.
 
