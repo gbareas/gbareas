@@ -1,118 +1,69 @@
-# Hi, I'm Guillem Barea 👋
+# Guillem Barea
 
-### Computational Scientist | Scientific Machine Learning
+### Research Engineer · Scientific ML for physics simulation
 
-I hold a PhD in data-driven fluid mechanics from [UPC BarcelonaTech](https://www.upc.edu/en) and currently lead an ERC-funded Proof of Concept with a multidisciplinary team of seven.
+I build and test machine-learning surrogates for expensive physics simulations, and I generate the multi-TB simulation data they are checked against. PhD (cum laude) in data-driven fluid mechanics from [UPC BarcelonaTech](https://www.upc.edu/en); I currently lead the technical work of an ERC-funded Proof of Concept with a team of seven.
 
-I build reproducible machine-learning and statistical-modelling workflows for high-dimensional physical data—from multi-TB HDF5 ingestion and feature extraction to model training, validation and out-of-distribution evaluation.
+What I care about: knowing **where a model holds up and where it breaks** (held-out operating conditions, physical constraints, documented negative results), and shipping that as tested, reproducible code other people can run.
 
-My work combines **Python**, **PyTorch** and **high-performance computing** with reduced-order modelling, signal processing and physics-aware evaluation. I am particularly interested in data science and machine-learning problems involving complex, noisy or expensive-to-generate data.
+**Open to** Applied Scientist, Research Scientist and Scientific ML Engineer roles where physics meets ML (simulation surrogates, engineering design, energy, aerospace, climate). Based in Barcelona, open to hybrid or remote.
 
-- 🔭 **Currently working on:** Benchmarking reduced-order and neural models for forecasting high-dimensional nonlinear systems.
-- 🎓 **Research background:** High-pressure fluid turbulence, POD/SPOD, surrogate modelling and uncertainty-aware validation.
-- ⚙️ **Engineering focus:** Reproducible pipelines, automated testing, leakage-safe preprocessing and scalable data processing.
-- 📚 **Research output:** 3 first-author Q1 publications, 3 co-authored papers and an open multi-TB simulation database.
-
----
-
-## Technical stack
-
-**Machine learning and modelling**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
-
-`PCA/POD` · `SPOD` · `Autoencoders` · `Neural operators` · `Time-series modelling` · `OOD evaluation`
-
-**Data and scientific computing**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
-![HDF5](https://img.shields.io/badge/HDF5-005B8C?style=flat&logo=hdf5&logoColor=white)
-
-**Engineering and HPC**
-
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-
-`pytest` · `C++` · `MPI` · `Bash` · `HPC clusters`
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-guillem--barea-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guillem-barea)
+[![Email](https://img.shields.io/badge/Email-contact-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:guillembarea.s@gmail.com)
+[![Data](https://img.shields.io/badge/Open_data-DNS_database-4A90D9?style=flat&logo=figshare&logoColor=white)](https://doi.org/10.25452/figshare.plus.29787812.v1)
 
 ---
 
-## Current flagship project
+## Featured work
 
-### METIS — ML framework for high-fidelity physical data
+### [METIS](https://github.com/gbareas/METIS): ML engine for high-fidelity simulation data
 
-A reusable framework for building and evaluating machine-learning models on large scientific datasets.
+[![CI](https://github.com/gbareas/METIS/actions/workflows/ci.yml/badge.svg)](https://github.com/gbareas/METIS/actions/workflows/ci.yml)
 
-- Implements validated HDF5 ingestion, leakage-safe preprocessing, versioned datasets and cached artifacts.
-- Provides reproducible PyTorch training and MLflow experiment tracking across multiple random seeds.
-- Evaluates models on held-out operating conditions using statistical and physics-aware metrics.
-- Benchmarks linear reduced-order models such as PCA/POD against nonlinear autoencoders.
-- Includes more than 260 unit, integration and scientific-regression tests executed through GitHub Actions.
+A tested Python framework that turns multi-GB direct numerical simulation output of supercritical-CO₂ flow into validated physics features, reproducible ML experiments and reports, with a small agent that decides when a fast neural-operator surrogate can be trusted and when to fall back to the full simulation.
 
-`Python` · `PyTorch` · `MLflow` · `HDF5` · `pytest` · `GitHub Actions`
+<a href="https://github.com/gbareas/METIS"><img src="https://raw.githubusercontent.com/gbareas/METIS/main/docs/summary.png" alt="METIS: regime recovery from physics features (left) and out-of-distribution routing between surrogate and DNS (right)" width="760"></a>
 
-> METIS is currently under active development. A public release will be linked here when the repository is ready.
+- Validated HDF5 ingestion, leakage-safe preprocessing, cached feature datasets and MLflow tracking behind one `metis` CLI.
+- Out-of-distribution routing: the surrogate is trusted only inside its validated envelope; an LLM explains the decision but never makes it.
+- Honest results: a frozen regression benchmark, plus two documented negative results where autoencoders did not beat linear PCA/POD.
+- ~250 tests, CI on every push, and a one-command Docker demo that needs no data, GPU or API key.
 
----
+`Python` · `PyTorch` · `scikit-learn` · `MLflow` · `HDF5` · `Docker` · `GitHub Actions`
 
-## Featured open-source projects
+### [braindance](https://github.com/gbareas/braindance): publication-ready figures, checked against their data
 
-### [RHEA to POD](https://github.com/gbareas/RHEA_to_POD)
+<a href="https://github.com/gbareas/braindance"><img src="https://raw.githubusercontent.com/gbareas/braindance/main/docs/banner.jpg" alt="braindance banner" width="760"></a>
 
-A Python workflow for extracting dominant spatial structures and temporal coefficients from high-fidelity simulation data using Proper Orthogonal Decomposition.
+A house style for scientific figures (LaTeX text, journal column widths, colourblind-safe colours, vector PDF) plus measured checks that compare what is drawn with the data file it came from. Works as a Python package and as a Claude Code plugin with a skill and a reviewer agent.
 
-- Constructs snapshot matrices from large simulation datasets.
-- Applies Singular Value Decomposition for dimensionality reduction.
-- Computes spatial modes, eigenvalues and temporal coefficients.
-- Turns raw simulation fields into compact, interpretable representations.
+`Python` · `matplotlib` · `pytest` · `Claude Code plugin`
 
-**Related data-science concepts:** PCA, unsupervised learning, feature extraction and reduced-order modelling.
+### More open source
 
-`Python` · `NumPy` · `HDF5` · `SVD` · `POD`
-
-### [RHEA to SPOD](https://github.com/gbareas/RHEA_to_SPOD)
-
-A spectral-analysis workflow for identifying coherent structures in statistically stationary, time-resolved simulation data using Spectral Proper Orthogonal Decomposition.
-
-- Combines Welch spectral estimation with frequency-domain dimensionality reduction.
-- Separates coherent structures by frequency and energetic contribution.
-- Supports the analysis of large multivariate datasets generated by high-fidelity simulations.
-- Produces physically interpretable spectral modes and energy distributions.
-
-**Related data-science concepts:** signal processing, Fourier analysis, spectral estimation and latent-feature extraction.
-
-`Python` · `NumPy` · `FFT` · `Welch's method` · `SPOD`
+| Project | What it does |
+|---|---|
+| [ripperdoc](https://github.com/gbareas/ripperdoc) | A research-supervisor agent for Claude Code: traces key numbers back to the code and equations that produce them, recomputes in a read-only sandbox, and returns an accept / revise / reject review. |
+| [RHEA_to_POD](https://github.com/gbareas/RHEA_to_POD) | Proper Orthogonal Decomposition (PCA/SVD) of large simulation datasets: spatial modes, energies and temporal coefficients. |
+| [RHEA_to_SPOD](https://github.com/gbareas/RHEA_to_SPOD) | Spectral POD (Welch + frequency-domain decomposition) to separate coherent structures by frequency. |
+| [HP_thermodynamics_tools](https://github.com/gbareas/HP_thermodynamics_tools) | Thermodynamic post-processing for high-pressure simulations, e.g. reconstructing a consistent pressure field from an equation of state. |
 
 ---
 
-## Research and open data
+## Research
 
-My doctoral research focused on quantitative modelling and data-driven analysis of nonlinear, high-pressure turbulent flows. It combined large-scale numerical experiments with statistical validation, modal decomposition and physical interpretation.
-
-- Completed the PhD in three years at UPC BarcelonaTech.
-- Published 3 first-author Q1 papers and contributed to 3 additional publications.
-- Led multi-TB simulation campaigns on Barcelona Supercomputing Center infrastructure.
-- Published the [Minimal Flow Unit Database of High-Pressure Transcritical Fluid Turbulence](https://doi.org/10.25452/figshare.plus.29787812.v1), subsequently selected for inclusion in the BLASTNet ecosystem.
-
----
-
-## How I work
-
-- **Validation first:** I evaluate models against independent references, held-out regimes and physical constraints—not only aggregate accuracy metrics.
-- **Reproducibility by design:** Data processing, training and evaluation are versioned, tested and automated wherever possible.
-- **Scalability with purpose:** I use HPC and efficient data formats to make large datasets manageable without sacrificing traceability.
-- **From theory to implementation:** I translate mathematical and physical models into documented computational tools that others can inspect and reuse.
+- **PhD in three years** at UPC BarcelonaTech on data-driven analysis of high-pressure transcritical turbulence.
+- **3 first-author Q1 papers** (Physical Review Fluids, Physics of Fluids) and 3 co-authored.
+- **Multi-TB simulation campaigns** on GPU and Barcelona Supercomputing Center infrastructure; ported an in-house C++ solver to GPUs (OpenACC, CUDA).
+- **Open data:** the [Minimal Flow Unit Database of High-Pressure Transcritical Fluid Turbulence](https://doi.org/10.25452/figshare.plus.29787812.v1), included in the BLASTNet ecosystem.
+- **Now:** benchmarking neural-operator architectures (FNO, WNO, DeepONet, U-Net) as surrogates for near-critical flows.
 
 ---
 
-## Let's connect
+## Toolbox
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Guillem_Barea-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/guillem-barea)
-[![Email](https://img.shields.io/badge/Email-Contact_me-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:guillembarea.s@gmail.com)
+**ML and modelling:** PyTorch · scikit-learn · MLflow · neural operators · autoencoders · PCA/POD/SPOD · time-series · OOD evaluation
+
+**Scientific computing:** Python · NumPy · SciPy · pandas · HDF5 · C++ · MPI · OpenACC/CUDA · HPC clusters
+
+**Engineering:** Linux · Git · Docker · GitHub Actions · pytest · Bash · Claude Code (skills, agents, plugins)
