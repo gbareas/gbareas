@@ -39,11 +39,22 @@ A house style for scientific figures (LaTeX text, journal column widths, colourb
 
 `Python` · `matplotlib` · `pytest` · `Claude Code plugin`
 
+### [ripperdoc](https://github.com/gbareas/ripperdoc): a research-supervisor agent for Claude Code
+
+<a href="https://github.com/gbareas/ripperdoc"><img src="https://raw.githubusercontent.com/gbareas/ripperdoc/main/docs/banner.jpg" alt="ripperdoc banner" width="760"></a>
+
+Questions results and experiment designs before anyone trusts them. It traces each key number to the code line and equation that produce it, recomputes in a read-only sandbox when needed, and returns an accept / revise / reject verdict with a schema-validated review. It never edits the work it reviews.
+
+- Two-reviewer ensemble on different models; blocking issues are merged as a union, never averaged.
+- Guard hook and sandbox: writes only to its review folder, runs code with the filesystem read-only and no network.
+- An eval suite of 10 small research results (7 with a planted flaw, 3 clean) measures what it catches and checks it never reruns expensive pipelines without permission.
+
+`Claude Code agent` · `Python` · `JSON Schema` · `bubblewrap sandbox`
+
 ### More open source
 
 | Project | What it does |
 |---|---|
-| [ripperdoc](https://github.com/gbareas/ripperdoc) | A research-supervisor agent for Claude Code: traces key numbers back to the code and equations that produce them, recomputes in a read-only sandbox, and returns an accept / revise / reject review. |
 | [RHEA_to_POD](https://github.com/gbareas/RHEA_to_POD) | Proper Orthogonal Decomposition (PCA/SVD) of large simulation datasets: spatial modes, energies and temporal coefficients. |
 | [RHEA_to_SPOD](https://github.com/gbareas/RHEA_to_SPOD) | Spectral POD (Welch + frequency-domain decomposition) to separate coherent structures by frequency. |
 | [HP_thermodynamics_tools](https://github.com/gbareas/HP_thermodynamics_tools) | Thermodynamic post-processing for high-pressure simulations, e.g. reconstructing a consistent pressure field from an equation of state. |
