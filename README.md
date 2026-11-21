@@ -57,7 +57,6 @@ Questions results and experiment designs before anyone trusts them. It traces ea
 |---|---|
 | [RHEA_to_POD](https://github.com/gbareas/RHEA_to_POD) | Proper Orthogonal Decomposition (PCA/SVD) of large simulation datasets: spatial modes, energies and temporal coefficients. |
 | [RHEA_to_SPOD](https://github.com/gbareas/RHEA_to_SPOD) | Spectral POD (Welch + frequency-domain decomposition) to separate coherent structures by frequency. |
-| [HP_thermodynamics_tools](https://github.com/gbareas/HP_thermodynamics_tools) | Thermodynamic post-processing for high-pressure simulations, e.g. reconstructing a consistent pressure field from an equation of state. |
 
 ---
 
